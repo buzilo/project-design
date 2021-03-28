@@ -1,45 +1,31 @@
 @import "vars"
 @import "fonts"
 @import "libs"
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
 
-::placeholder
-	color: #666
+.container
+	max-width: 1179px
+	margin: 0 auto
+	padding: 0
 
-::selection
-	background-color: $accent
-	color: #fff
+// хэдер
 
-body
-	font-size: 16px
-	min-width: 320px
+.header__content
+	
+
+
+
+
+.basket
 	position: relative
-	line-height: 1.65
-	overflow-x: hidden
-	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
 
-.col-6
-	font-family: $font-playfairDisplay-regular
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
-		width: 100%
-
-.text-center
-	text-align: center
-
-b, strong
-	font-weight: bold
-
+	.basket-number
+		position: absolute
+		top: -1px
+		left: 15px
 
 
 @import "media" // Always at the end
