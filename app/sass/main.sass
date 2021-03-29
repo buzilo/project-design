@@ -14,12 +14,14 @@ body
 	max-width: 1179px
 	margin: 0 auto
 	padding: 0
-	
 ul
+	margin: 0
+li
+	list-style-type: none
+h1, h2, p
 	margin: 0
 
 // хэдер
-
 .header
 	&__content
 		height: 200px
@@ -37,7 +39,6 @@ ul
 				margin-right: $margin-header
 			&:last-child
 				margin-left: $margin-header + 6px
-			list-style-type: none
 			a
 				text-decoration: none
 				color: $color-black
@@ -62,11 +63,9 @@ ul
 			border-radius: 22px
 			cursor: pointer
 			&:hover
-				background: #dddddd8e
-				opacity: 0.7
+				background: #f9fdff86
 			&:focus
-				background: #dddddd8e
-				opacity: 0.7
+				background: #f9fdff86
 				outline: none
 		.basket
 			padding: 8px 12px 3px 12px
@@ -74,19 +73,16 @@ ul
 			cursor: pointer
 			position: relative
 			&:hover
-				background: #dddddd8e
-				opacity: 0.7
+				background: #f9fdff86
 			&:focus
-				background: #dddddd8e
-				opacity: 0.7
+				background: #f9fdff86
 				outline: none
 		.basket-number
 			position: absolute
 			top: 5px
 			left: 27px
 
-
-
+// задний фон верхней секции
 .section__top
 	position: relative
 	.header__img
@@ -111,6 +107,67 @@ ul
 		background-color: #F9FDFF
 		z-index: -2
 
+// контент верхней секции
+.section__top
+	.top
+		display: flex
+		justify-content: space-between
+		&__left
+			margin-top: 35px
+			width: 545px
+			color: $color-black
+			h1
+				font-family: $font-playfairDisplay-bold
+				font-size: 57px
+				line-height: 83px
+				letter-spacing: 0.05em
+				text-transform: uppercase
+				margin-bottom: $margin-top
+			p
+				font-family: $font-openSans-regular
+				font-size: 20px
+				line-height: 27px
+				margin-bottom: 10px
+			.left__price
+				display: flex
+				align-items: baseline
+				font-family: $font-openSans-regular
+				font-size: 20px
+				line-height: 27px
+				color: $color-black
+				margin-bottom: $margin-top
+				p:first-child
+					text-decoration-line: line-through
+					margin-right: 22px
+				p:last-child
+					font-family: $font-openSans-semiBold
+					font-size: 30px
+					line-height: 41px
+			button
+				@extend %form-buttom-buy
+		&__right
+			margin-top: 111px
+			ul
+				li
+					padding-right: 20px
+					padding-bottom: 5px
+					&:hover
+						border-right: 2px solid
+					&:nth-of-type(n+2)
+						margin-top: 20px
+					a
+						text-decoration: none
+						font-family: $font-playfairDisplay-regular
+						font-size: 20px
+						line-height: 29px
+						letter-spacing: 0.05em
+						text-transform: uppercase
+						color: rgba(0, 0, 0, 0.3)
+						&:hover
+							font-size: 40px
+							line-height: 58px
+							letter-spacing: 0.05em
+							color: #000000
 
 
 
