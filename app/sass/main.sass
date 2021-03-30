@@ -102,6 +102,7 @@ h1, h2, p
 
 // контент верхней секции
 .section__top
+	margin-bottom: 276px
 	.top
 		display: flex
 		justify-content: space-between
@@ -205,28 +206,62 @@ h1, h2, p
 		width: 570px
 		display: flex
 		flex-wrap: wrap
+		margin-right: 30px
+		div:nth-of-type(odd)
+			margin-right: 30px
+		div:nth-of-type(-n+2)
+			margin-bottom: 37px
 		&-new
 			width: 270px
 			background: #FFFFFF
 			padding-top: 123px
 			h1
 				margin-bottom: 7px
+				font-family: $font-playfairDisplay-bold
+				font-size: 28px
+				line-height: 37px
+				letter-spacing: 0.05em
 		&-chair
 			text-align: center
-			padding: 20px 48px 16px 47px
+			padding: 20px 43px 16px 44px
 			background: #FFFFFF
+			img
+				margin-bottom: 10px
+			p
+				@extend %middle-p
+			span
+				@extend %middle-span
 		&-chandelier
 			text-align: center
 			padding: 1px 32px 16px 36px
 			background: #FFFFFF
+			img
+				margin-bottom: 7px
+			p
+				@extend %middle-p
+				margin-top: -27px
+			span
+				@extend %middle-span
 		&-table
 			text-align: center
 			padding-bottom: 16px
 			background: #FAECE9
-
+			img
+				margin-bottom: 10px
+			p
+				@extend %middle-p
+			span
+				@extend %middle-span
 	&__right
 		text-align: center
+		padding: 19px 37px 26px 43px
 		background: #FFFFFF
+		img
+			margin-bottom: 29px
+		p
+			@extend %middle-p
+		span
+			@extend %middle-span
 
 
 
