@@ -5,6 +5,7 @@
 
 body
 	line-height: 1
+	background: #F9FDFF
 *
 	box-sizing: border-box
 	margin: 0
@@ -54,7 +55,7 @@ h1, h2, p
 					opacity: 0.6
 	&__buy
 		display: flex
-		margin-right: 1px
+		margin-right: 8px
 		div
 			&:last-child
 				margin-left: 2px
@@ -98,14 +99,6 @@ h1, h2, p
 		height: 751px
 		background-color: #FCEAE8
 		z-index: -3
-	.header__font-grey
-		position: absolute
-		top: 0
-		left: -135px
-		width: 916px
-		height: 751px
-		background-color: #F9FDFF
-		z-index: -2
 
 // контент верхней секции
 .section__top
@@ -122,7 +115,7 @@ h1, h2, p
 				line-height: 83px
 				letter-spacing: 0.05em
 				text-transform: uppercase
-				margin-bottom: $margin-top
+				margin-bottom: $margin-top - 9px
 			p
 				font-family: $font-openSans-regular
 				font-size: 20px
@@ -135,7 +128,7 @@ h1, h2, p
 				font-size: 20px
 				line-height: 27px
 				color: $color-black
-				margin-bottom: $margin-top
+				margin-bottom: $margin-top - 10px
 				p:first-child
 					text-decoration-line: line-through
 					margin-right: 22px
@@ -146,29 +139,94 @@ h1, h2, p
 			button
 				@extend %form-buttom-buy
 		&__right
-			margin-top: 111px
+			margin-top: 125px
 			ul
-				li
-					padding-right: 20px
+				display: flex
+				flex-direction: column
+				margin-right: 23px
+				a
+					padding-right: 6px
+					outline: none
+					transition: transform .2s
 					padding-bottom: 5px
-					&:hover
-						border-right: 2px solid
+					text-decoration: none
+					font-family: $font-playfairDisplay-regular
+					font-size: 20px
+					line-height: 29px
+					letter-spacing: 0.05em
+					text-transform: uppercase
+					color: rgba(0, 0, 0, 0.3)
 					&:nth-of-type(n+2)
 						margin-top: 20px
-					a
-						text-decoration: none
-						font-family: $font-playfairDisplay-regular
-						font-size: 20px
-						line-height: 29px
-						letter-spacing: 0.05em
-						text-transform: uppercase
-						color: rgba(0, 0, 0, 0.3)
-						&:hover
-							font-size: 40px
-							line-height: 58px
-							letter-spacing: 0.05em
-							color: #000000
+					&:hover
+						transform: scale(2)
+						border-right: 1.5px solid
+						padding-right: 4.5px
+						color: black
+					&:focus
+						transform: scale(2)
+						border-right: 1.5px solid
+						padding-right: 4.5px
+						color: black
+					// li
+					// 	cursor: pointer
+					// 	padding-right: 8px
+					// 	transition: transform .2s
+					// 	padding-bottom: 5px
+					// 	&:nth-of-type(n+2)
+					// 		margin-top: 20px
+					// 	&:hover
+					// 		transform: scale(2)
+					// 		border-right: 1.5px solid
+					// 		padding-right: 6.5px
+					// 		a
+					// 			color: black
+					// 	&:focus
+					// 		transform: scale(2)
+					// 		border-right: 1.5px solid
+					// 		padding-right: 6.5px
+					// 		a
+					// 			color: black
 
+					// 	a
+					// 		text-decoration: none
+					// 		font-family: $font-playfairDisplay-regular
+					// 		font-size: 20px
+					// 		line-height: 29px
+					// 		letter-spacing: 0.05em
+					// 		text-transform: uppercase
+					// 		color: rgba(0, 0, 0, 0.3)
+
+// средняя часть
+
+.middle
+	display: flex
+	&__left
+		width: 570px
+		display: flex
+		flex-wrap: wrap
+		&-new
+			width: 270px
+			background: #FFFFFF
+			padding-top: 123px
+			h1
+				margin-bottom: 7px
+		&-chair
+			text-align: center
+			padding: 20px 48px 16px 47px
+			background: #FFFFFF
+		&-chandelier
+			text-align: center
+			padding: 1px 32px 16px 36px
+			background: #FFFFFF
+		&-table
+			text-align: center
+			padding-bottom: 16px
+			background: #FAECE9
+
+	&__right
+		text-align: center
+		background: #FFFFFF
 
 
 
