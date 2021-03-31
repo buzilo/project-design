@@ -51,7 +51,7 @@ $margin-top: 35px
 
 // переменные средней секции middle
 
-// переменные для p
+// переменные для блоков
 %middle-p
     margin-bottom: 7px
     font-family: $font-openSans-regular
@@ -64,3 +64,11 @@ $margin-top: 35px
     font-size: 28px
     line-height: 38px
     color: $color-black
+
+// переменные при наведении
+%middle-hover
+    transition: 500ms
+    cursor: pointer
+    &:hover
+        transform: scale(1.1)
+        opacity: 0.8
