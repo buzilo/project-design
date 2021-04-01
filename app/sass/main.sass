@@ -5,7 +5,6 @@
 
 body
 	line-height: 1
-	background: #F9FDFF
 *
 	box-sizing: border-box
 	margin: 0
@@ -13,7 +12,6 @@ body
 
 .container
 	max-width: 1179px
-	margin: 0 auto
 	padding: 0
 ul
 	margin: 0
@@ -21,6 +19,12 @@ li
 	list-style-type: none
 h1, h2, p
 	margin: 0
+
+// заливка заднего фона
+.background
+	width: 1440px
+	margin: 0 auto
+	background: #F9FDFF
 
 // хэдер
 .header
@@ -55,24 +59,32 @@ h1, h2, p
 					opacity: 0.6
 	&__buy
 		display: flex
-		margin-right: 8px
+		margin-right: 1px
 		div
 			&:last-child
-				margin-left: 2px
+				margin-left: -5px
 		.find
-			padding: 8px 10px 3px 13px
-			border-radius: 22px
+			width: 50px
+			height: 50px
+			border-radius: 50%
 			cursor: pointer
+			display: flex
+			justify-content: center
+			align-items: center
 			&:hover
 				background: #f9fdff86
 			&:focus
 				background: #f9fdff86
 				outline: none
 		.basket
-			padding: 8px 12px 3px 12px
-			border-radius: 22px
+			width: 50px
+			height: 50px
+			border-radius: 50%
 			cursor: pointer
 			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
 			&:hover
 				background: #f9fdff86
 			&:focus
@@ -86,15 +98,16 @@ h1, h2, p
 // задний фон верхней секции
 .section__top
 	position: relative
+	z-index: 1
 	.header__img
 		position: absolute
 		top: 0
 		left: 566px
-		z-index: -1
+		z-index: -2
 	.header__font-rose
 		position: absolute
 		top: 0
-		left: 760px
+		right: -130px
 		width: 524px
 		height: 751px
 		background-color: #FCEAE8
@@ -170,8 +183,7 @@ h1, h2, p
 						padding-right: 4.5px
 						color: black
 
-// средняя часть
-
+// средняя сукция
 .middle
 	display: flex
 	margin-bottom: 102px
@@ -250,7 +262,6 @@ h1, h2, p
 .middle__slider
 	width: 753px
 	margin: 0 auto
-	margin-bottom: 100px
 	.Helen-Novikova
 		text-align: center
 		display: flex
@@ -277,6 +288,8 @@ h1, h2, p
 		line-height: 25px
 		color: #444348
 
+// нижняя секция
+// контент нижней секции
 
 
 @import "media" // Always at the end
