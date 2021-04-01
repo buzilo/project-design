@@ -174,6 +174,7 @@ h1, h2, p
 
 .middle
 	display: flex
+	margin-bottom: 102px
 	&__left
 		width: 570px
 		display: flex
@@ -237,6 +238,7 @@ h1, h2, p
 		cursor: pointer
 		&:hover
 			opacity: 0.8
+			transform: scale(1.05)
 		img
 			margin-bottom: 29px
 		p
@@ -245,8 +247,39 @@ h1, h2, p
 			@extend %middle-span
 
 // слайдер
+.middle__slider
+	margin-bottom: 100px
+	.Helen-Novikova
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		img
+			align-self: center
+			margin-bottom: 25px
+		span
+			width: 233px
+			font-family: $font-openSans-regular
+			font-size: 16px
+			line-height: 25px
+			margin-bottom: 20px
+			color: #444348
+			b
+				font-family: $font-openSans-bold
+				font-size: 18px
+				line-height: 28px
 
 
+	p
+		width: 653px
+		font-family: $font-openSans-italic
+		font-size: 16px
+		line-height: 25px
+		color: #444348
+
+.middle__slider
+	.Helen-Novikova
+	
 
 
 @import "media" // Always at the end

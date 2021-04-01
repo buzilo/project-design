@@ -1,5 +1,5 @@
 $(function() {
-
-	// Custom JS
-
+	$('.middle__slider').slick({
+		infinite: true
+	});
 });
