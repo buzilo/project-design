@@ -17,7 +17,7 @@ ul
 	margin: 0
 li
 	list-style-type: none
-h1, h2, p
+h1, h2, h3, p
 	margin: 0
 
 // заливка заднего фона
@@ -290,6 +290,86 @@ h1, h2, p
 
 // нижняя секция
 // контент нижней секции
+.section__bottom
+	.bottom-content
+		&__final
+			h1 //последний шанс
+				font-family: $font-playfairDisplay-bold
+				font-size: 28px
+				line-height: 37px
+				letter-spacing: 0.05em
+				text-transform: uppercase
+				margin-bottom: 7px
+				color: $color-black
+			img
+				margin-bottom: 37px
+		&__nav
+			display: flex
+			margin-bottom: 25px
+			a:first-child
+				color: #000000
+				text-decoration-line: underline
+			a //стулья диван кресла
+				font-family: $font-openSans-semiBold
+				font-size: 16px
+				line-height: 25px
+				text-decoration: none
+				color: rgba(0, 0, 0, 0.4)
+				margin-right: 48px
+				&:hover
+					color: #000000
+					text-decoration-line: underline
+
+.chair
+	display: flex
+	>div:nth-of-type(n+2)
+		margin-left: 31px
+	>div
+		background: #ffffff
+		padding-top: 27px
+	h3 //название стула
+		font-family: $font-openSans-regular
+		font-weight: normal
+		font-size: 16px
+		line-height: 22px
+		color: #000000
+		margin-left: 26px
+
+	.chair__price
+		display: flex
+		align-items: baseline
+		position: relative
+		margin-left: 26px
+		.price-1
+			font-family: $font-openSans-semiBold
+			font-size: 28px
+			line-height: 38px
+			color: #303032
+		.price-2
+			font-family: $font-openSans-semiBold
+			font-size: 16px
+			line-height: 22px
+			text-decoration-line: line-through
+			color: #979798
+			margin-left: 11px
+	//верхние отступы картинок стульев
+	.caramel
+		margin-top: 16px
+	.cloud
+		margin-top: 13px
+		margin-left: 12px
+	.owl
+		margin-top: 22px
+		margin-left: 42px
+	.lighthouse
+		margin-left: 23px
+	.Messi
+		margin-top: 19px
+		margin-left: 47px
+
+.chair-lighthouse //картинка стула маяк, уходит под блок с ценой
+	.chair__price
+		margin-bottom: -17px
 
 
 @import "media" // Always at the end
