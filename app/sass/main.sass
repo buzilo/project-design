@@ -293,6 +293,7 @@ h1, h2, h3, p
 .section__bottom
 	margin-top: 204px
 	position: relative
+	padding-bottom: 109px
 	.font-bot-rose
 		position: absolute
 		width: 815px
@@ -430,6 +431,60 @@ h1, h2, h3, p
 				outline: none
 
 // футер
+.footer
+	margin-top: 100px
+	margin-left: 13px
+	margin-bottom: 30px
+	display: flex
+	justify-content: space-between
+	&__left
+		&-logo
+			margin-bottom: 31px
+			cursor: pointer
+		&-contacts
+			display: flex
+			p
+				font-family: $font-roboto-regular
+				margin-right: 51px
+				font-size: 16px
+				line-height: 19px
+				color: #303032
+				.phone
+					margin-right: 7px
+				.mail
+					margin-right: 8px
+	&__right
+		display: flex
+		margin-right: 8px
+		p
+			margin-left: 60px
+			text-decoration: none
+			cursor: pointer
+			font-family: $font-avenir-demi
+			font-size: 14px
+			line-height: 22px
+			letter-spacing: 0.05em
+			text-transform: uppercase
+			color: #303032
+			&:hover
+				color: #727275
+// копирайт
+footer
+	.copyright
+		margin-left: 8px
+		hr
+			width: 1162px
+			border: 1px solid rgba(0, 0, 0, 0.2)
+			transform: matrix(1, 0, 0, 1, 0, 0)
+			margin-bottom: 10px
+		p
+			float: right
+			font-family: $font-avenir-regular
+			font-size: 10px
+			line-height: 15px
+			color: #000000
+			opacity: 0.2
+			margin-bottom: 10px
 
 
 
