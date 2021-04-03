@@ -183,7 +183,7 @@ h1, h2, h3, p
 						padding-right: 4.5px
 						color: black
 
-// средняя сукция
+// средняя секция
 .middle
 	display: flex
 	margin-bottom: 102px
@@ -291,7 +291,20 @@ h1, h2, h3, p
 // нижняя секция
 // контент нижней секции
 .section__bottom
+	margin-top: 204px
+	position: relative
+	.font-bot-rose
+		position: absolute
+		width: 815px
+		height: 545px
+		background-color: #FAECE9
+		top: -73px
+		left: -131px
+		z-index: 1
 	.bottom-content
+		position: relative
+		z-index: 2
+		margin-left: 8px
 		&__final
 			h1 //последний шанс
 				font-family: $font-playfairDisplay-bold
@@ -324,9 +337,28 @@ h1, h2, h3, p
 	display: flex
 	>div:nth-of-type(n+2)
 		margin-left: 31px
+	>div:hover
+		opacity: 0.8
+		.buy-chair-top
+			display: block
+		.buy-chair-bot
+			display: block
+	>div:focus
+		.buy-chair-top
+			display: block
+		.buy-chair-bot
+			display: block
 	>div
 		background: #ffffff
 		padding-top: 27px
+		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05)
+		cursor: pointer
+		outline: none
+		transition: 800ms
+		.buy-chair-top
+			display: none
+		.buy-chair-bot
+			display: none
 	h3 //название стула
 		font-family: $font-openSans-regular
 		font-weight: normal
@@ -370,6 +402,38 @@ h1, h2, h3, p
 .chair-lighthouse //картинка стула маяк, уходит под блок с ценой
 	.chair__price
 		margin-bottom: -17px
+
+// кнопка купить
+.chair
+	>div
+		position: relative
+		.buy-chair-top
+			position: absolute
+			top: 0
+			width: 209px
+			height: 5px
+			background: #303032
+		.buy-chair-bot
+			position: absolute
+			bottom: -45px
+			button
+				padding: 18px 67px
+				background: #303032
+				color: #FFFFFF
+				font-family: $font-openSans-regular
+				font-size: 16px
+				line-height: 22px
+				letter-spacing: 0.13em
+				text-transform: uppercase
+				cursor: pointer
+				border: 0
+				outline: none
+
+
+
+
+
+
 
 
 @import "media" // Always at the end
